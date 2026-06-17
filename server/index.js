@@ -26,7 +26,7 @@ app.post("/contact", async (req, res) => {
   try {
    
 
-    await resend.emails.send({
+    const data = await resend.emails.send({
       from: "AIOCAM Website <onboarding@resend.dev>",
       replyTo: email,
       to: "diobebelle@gmail.com",
@@ -56,7 +56,7 @@ app.post("/volunteer", async (req, res) => {
       emailContent += `${key}: ${req.body[key]}\n`;
     });
 
-    await resend.emails.send({
+    const data = await resend.emails.send({
       from: "AIOCAM Website <onboarding@resend.dev>",
       to: "diobebelle@gmail.com",
       subject: "New Volunteer Sign Up - AIOCAM Website",
