@@ -29,7 +29,7 @@ app.post("/contact", async (req, res) => {
     const data = await resend.emails.send({
       from: "AIOCAM Website <onboarding@resend.dev>",
       replyTo: email,
-      to: "diobebelle@gmail.com",
+      to: "philipewang120@gmail.com",
       subject: "New Contact Message - AIOCAM Website",
       html: `
 
@@ -58,11 +58,12 @@ app.post("/volunteer", async (req, res) => {
 
     const data = await resend.emails.send({
       from: "AIOCAM Website <onboarding@resend.dev>",
-      to: "diobebelle@gmail.com",
+      to: "philipewang120@gmail.com",
       subject: "New Volunteer Sign Up - AIOCAM Website",
       html: emailContent
     });
 
+    console.log("Resend response:", data);
     res.json({ status: "success" });
 
   } catch (error) {
