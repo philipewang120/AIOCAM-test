@@ -1,5 +1,6 @@
 import { Box, Typography, Button } from "@mui/material";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -53,7 +54,7 @@ export default function HeroCarousel() {
       <Box maxWidth="500px">
         <Typography variant="h3">{slide.title}</Typography>
         <Typography sx={{ my: 2 }}>{slide.text}</Typography>
-        <Button variant="contained" href={slide.link}>
+        <Button component={Link} to={slide.link} variant="contained">
           {slide.btn}
         </Button>
       </Box>
