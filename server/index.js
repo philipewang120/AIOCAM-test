@@ -31,7 +31,7 @@ app.post("/contact", async (req, res) => {
       replyTo: email,
       to: "diobebelle@gmail.com",
       subject: "New Contact Message - AIOCAM Website",
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+      html: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
     });
 
     res.json({ status: "success" });
@@ -54,7 +54,7 @@ app.post("/volunteer", async (req, res) => {
       from: "AIOCAM Website <onboarding@resend.dev>",
       to: "diobebelle@gmail.com",
       subject: "New Volunteer Sign Up - AIOCAM Website",
-      text: emailContent
+      html: emailContent
     });
 
     res.json({ status: "success" });
