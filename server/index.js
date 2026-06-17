@@ -31,9 +31,15 @@ app.post("/contact", async (req, res) => {
       replyTo: email,
       to: "diobebelle@gmail.com",
       subject: "New Contact Message - AIOCAM Website",
-      html: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
-    });
+      html: `
 
+    <h2>New Contact Message</h2>
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Message:</strong> ${message}</p>
+  `
+    });
+    console.log("Resend response:", data);
     res.json({ status: "success" });
 
   } catch (error) {
