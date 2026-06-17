@@ -3,21 +3,21 @@ import { useState, useEffect } from "react";
 
 const slides = [
   {
-    img: "src/assets/images/Jumbotron5.png",
+    img: "/images/Jumbotron5.png",
     title: "The Future starts with us.",
     text: "Become a partner with AIOCAM...",
     btn: "Partner with Us",
     link: "/volunteer"
   },
   {
-    img: "src/assets/images/Jumbotron2.jpg",
+    img: "/images/Jumbotron2.jpg",
     title: "Leaders of Tomorrow.",
     text: "Join AIOCAM and be part of the movement...",
     btn: "Join the Movement",
     link: "/volunteer"
   },
   {
-    img: "src/assets/images/Jumbotron3.jpg",
+    img: "/images/Jumbotron3.jpg",
     title: "Together for a better Cameroon.",
     text: "Civic responsibility is our duty...",
     btn: "Support AIOCAM",

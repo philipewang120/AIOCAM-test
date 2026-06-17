@@ -45,7 +45,7 @@ gap: 3,
         }}
       >
         <img
-          src="src/assets/images/AIOCAMlogo.png"
+          src="/images/AIOCAMlogo.png"
           alt="Logo"
           style={{
             width: 60,

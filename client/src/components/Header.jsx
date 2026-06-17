@@ -54,7 +54,7 @@ export default function Header() {
           >
             <Box
               component="img"
-              src="src/assets/images/AIOCAMlogo.png"
+              src="/images/AIOCAMlogo.png"
               alt="AIOCAM Logo"
               sx={{
                 width: 55,

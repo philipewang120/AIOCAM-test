@@ -23,7 +23,7 @@ export default function About() {
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    backgroundImage: "url('src/assets/images/Jumbotron5.png')",
+    backgroundImage: "url('/images/Jumbotron5.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     position: "relative",

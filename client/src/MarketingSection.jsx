@@ -2,17 +2,17 @@ import { Grid, Typography, Button, Box } from "@mui/material";
 
 const items = [
   {
-    img: "src/assets/images/why.jpg",
+    img: "/images/why.jpg",
     title: "Why AIOCAM Exists",
     text: "Cameroon’s development requires..."
   },
   {
-    img: "src/assets/images/what.jpg",
+    img: "/images/what.jpg",
     title: "What We Do",
     text: "• School outreach\n• Civic education\n• Community service"
   },
   {
-    img: "src/assets/images/highlighted.jpg",
+    img: "/images/highlighted.jpg",
     title: "Highlighted Activities",
     text: "• Youth Week tours\n• Media engagement\n• Awareness sessions"
   }

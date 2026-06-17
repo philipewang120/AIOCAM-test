@@ -17,7 +17,7 @@ export default function Home() {
           title="First featurette heading."
           subtitle="It’ll blow your mind."
           text="Some great placeholder content for the first featurette here."
-          image="src/assets/images/feature4.jpg"
+          image="/images/feature4.jpg"
         />
 
         <Divider sx={{ my: 5 }} />
@@ -27,7 +27,7 @@ export default function Home() {
           title="Oh yeah, it’s that good."
           subtitle="See for yourself."
           text="More placeholder content here."
-          image="src/assets/images/feature2.jpg"
+          image="/images/feature2.jpg"
         />
 
         <Divider sx={{ my: 5 }} />
@@ -36,7 +36,7 @@ export default function Home() {
           title="And lastly, this one."
           subtitle="Checkmate."
           text="Your real content goes here."
-          image="src/assets/images/feature3.jpg"
+          image="/images/feature3.jpg"
         />
       </Container>
     </>

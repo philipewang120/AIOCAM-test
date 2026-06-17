@@ -7,9 +7,9 @@ import {
 } from "@mui/material";
 
 const partners = [
-  "src/assets/images/partner1.png",
-  "src/assets/images/partner2.png",
-  "src/assets/images/partner3.png"
+  "/images/partner1.png",
+  "/images/partner2.png",
+  "/images/partner3.png"
 ];
 
 export default function Partnerships() {

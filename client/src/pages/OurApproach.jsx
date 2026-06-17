@@ -41,7 +41,7 @@ export default function OurApproach() {
   },
   px: 2,
   py: 6,
-          backgroundImage: "url('src/assets/images/Jumbotron6.jpg')",
+          backgroundImage: "url('/images/Jumbotron6.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",

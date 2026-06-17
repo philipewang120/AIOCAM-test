@@ -15,7 +15,7 @@ const activities = [
       "National development mindset",
       "Community service culture"
     ],
-    image: "src/assets/images/outreach.jpg",
+    image: "/images/outreach.jpg",
     reverse: false
   },
 
@@ -25,7 +25,7 @@ const activities = [
       "AIOCAM is working toward structured community service programs in partnership with educational institutions, encouraging students to complete community service hours before graduation.",
       "This model is flexible, measurable and designed for long-term impact."
     ],
-    image: "src/assets/images/comService.jpg",
+    image: "/images/comService.jpg",
     reverse: true
   },
 
@@ -35,7 +35,7 @@ const activities = [
       "AIOCAM engages national media platforms to promote civic awareness and public dialogue.",
       "Media serves as a strategic tool for national orientation."
     ],
-    image: "src/assets/images/mediaOutreach1.jpg",
+    image: "/images/mediaOutreach1.jpg",
     reverse: false
   }
 ];

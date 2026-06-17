@@ -17,7 +17,7 @@ export default function News() {
   },
            px: 2,
   py: 6,
-          backgroundImage: "url('src/assets/images/Jumbotron3.jpg')",
+          backgroundImage: "url('/images/Jumbotron3.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",

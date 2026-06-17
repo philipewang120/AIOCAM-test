@@ -68,17 +68,17 @@ export default function Volunteer() {
         {[
           {
             title: "FOR STUDENTS",
-            img: "src/assets/images/campusAmbassador.png",
+            img: "/images/campusAmbassador.png",
             text: "Become a campus ambassador..."
           },
           {
             title: "FOR INSTITUTIONS",
-            img: "src/assets/images/institution.jpg",
+            img: "/images/institution.jpg",
             text: "Partner with AIOCAM..."
           },
           {
             title: "FOR SPONSORS",
-            img: "src/assets/images/sponsor.jpg",
+            img: "/images/sponsor.jpg",
             text: "Support initiatives..."
           }
         ].map((item, i) => (
