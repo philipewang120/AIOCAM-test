@@ -1,5 +1,5 @@
 import express from 'express';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
@@ -10,6 +10,7 @@ const port = process.env.PORT || 3000;
 const allowedOrigins = [
   "https://aiocam-test.vercel.app",
 ];
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.use(cors({
   origin: allowedOrigins,
@@ -23,16 +24,10 @@ app.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_APP_PASSWORD
-      }
-    });
+   
 
-    await transporter.sendMail({
-      from: process.env.GMAIL_USER,
+    await resend.emails.send({
+      from: "AIOCAM Website <onboarding@resend.dev>",
       replyTo: email,
       to: "diobebelle@gmail.com",
       subject: "New Contact Message - AIOCAM Website",
@@ -50,21 +45,13 @@ app.post("/contact", async (req, res) => {
 // VOLUNTEER
 app.post("/volunteer", async (req, res) => {
   try {
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_APP_PASSWORD
-      }
-    });
-
     let emailContent = "";
     Object.keys(req.body).forEach(key => {
       emailContent += `${key}: ${req.body[key]}\n`;
     });
 
-    await transporter.sendMail({
-      from: process.env.GMAIL_USER,
+    await resend.emails.send({
+      from: "AIOCAM Website <onboarding@resend.dev>",
       to: "diobebelle@gmail.com",
       subject: "New Volunteer Sign Up - AIOCAM Website",
       text: emailContent
